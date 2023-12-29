@@ -19,13 +19,13 @@ export default function Author() {
   return (
     <section className='mw'>
       <div className='title'>
-        <img src='../img/authors_title.png' />
+        <img src={`${process.env.PUBLIC_URL}/img/authors_title.png`} />
       </div>
       <ul className='authorCon'>
         {authorsList.map((authorsData) => (
           <li>
             <div className='profile'>
-              <img src={`/img/${authorsData.img}`} />
+              <img src={`${process.env.PUBLIC_URL}/img/${authorsData.img}`} />
             </div>
             <h3>{authorsData.name}</h3>
             <div className='smallT'>

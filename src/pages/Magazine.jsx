@@ -30,7 +30,7 @@ export default function Magazine() {
               <a href=''>{list.category}</a>
             </div>
             <div className='imgCon'>
-              <img src={`/img/${list.img}`} />
+              <img src={`${process.env.PUBLIC_URL}/img/${list.img}`} />
             </div>
             <h3>{list.title}</h3>
             <p className='text'>{list.content}</p>

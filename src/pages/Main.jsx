@@ -7,7 +7,7 @@ export default function Main() {
   return (
     <main className='mainCon mw'>
       <div className='title'>
-        <img src='../img/main_Art_Life.png' />
+        <img src={`${process.env.PUBLIC_URL}/img/main_Art_Life.png`} />
       </div>
       <div className='news'>
         <strong>NEWS TICKER+++</strong>
@@ -23,10 +23,12 @@ export default function Main() {
         <div className='inner'>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
-            blanditiis ipsa, optio itaque alias,
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam optio esse ea fuga numquam cupiditate deserunt earum quis ducimus iure, eum quia mollitia ipsa labore illum odio unde enim.
-            explicabo quis accusantium facilis fugiat numquam minus, quisquam
-            nobis dolores delectus est. Eaque magni aspernatur iste.
+            blanditiis ipsa, optio itaque alias, Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Itaque nam optio esse ea fuga numquam
+            cupiditate deserunt earum quis ducimus iure, eum quia mollitia ipsa
+            labore illum odio unde enim. explicabo quis accusantium facilis
+            fugiat numquam minus, quisquam nobis dolores delectus est. Eaque
+            magni aspernatur iste.
           </p>
           <div className='record'>
             <span>
@@ -38,12 +40,12 @@ export default function Main() {
             <span>
               <b>Read</b> 1 Min
             </span>
-          <a href='#'>ART</a>
+            <a href='#'>ART</a>
           </div>
         </div>
       </div>
       <div className='bigImg'>
-        <img src='../img/main_big.png'></img>
+        <img src={`${process.env.PUBLIC_URL}/img/main_big.png`}></img>
       </div>
 
       <section className='secCon'>

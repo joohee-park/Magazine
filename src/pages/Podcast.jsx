@@ -19,7 +19,7 @@ export default function Potcast() {
   return (
     <section className='mw'>
       <div className='title'>
-        <img src='../img/Podcast_title.png' />
+        <img src={`${process.env.PUBLIC_URL}/img/Podcast_title.png`} />
       </div>
       <ul className='podcastCon'>
         {podcastList
@@ -29,7 +29,7 @@ export default function Potcast() {
             <li>
               <p className='num'>{podcastData._id}</p>
               <div className='profile'>
-                <img src={`/img/${podcastData.img}`} />
+                <img src={`${process.env.PUBLIC_URL}/img/${podcastData.img}`} />
               </div>
               <h3>{podcastData.title}</h3>
               <div className='smallT'>

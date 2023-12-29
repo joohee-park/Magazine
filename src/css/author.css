@@ -1,0 +1,77 @@
+.authorCon {
+  margin: 3rem 0;
+}
+.title {
+  padding-top: 2rem;
+}
+.title > img {
+  width: 100%;
+}
+
+.authorCon > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  font-size: 1.5rem;
+  width: 100%;
+  border-bottom: 1px solid var(--b1);
+}
+
+.authorCon > li:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.authorCon > li > h3 {
+  text-align: center;
+  width: 35%;
+  font-weight: bold;
+}
+
+.authorCon .profile {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.authorCon .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.authorCon .smallT {
+  display: flex;
+  gap: 2rem;
+  width: 20%;
+}
+
+.authorCon .smallT p {
+  font-weight: bold;
+}
+
+.authorCon a {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 990px) {
+  .authorCon > li {
+    padding: 1rem 0;
+  }
+  .authorCon > li > h3 {
+    width: 50%;
+  }
+  .authorCon .profile {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+  }
+  .authorCon .smallT {
+    display: none;
+  }
+}

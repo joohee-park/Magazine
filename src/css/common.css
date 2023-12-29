@@ -1,0 +1,217 @@
+@charset 'utf-8';
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+
+:root {
+  font-family: "Raleway";
+  font-size: 10px;
+  --w1: #fff;
+  --w2: #f8f8f8;
+  --b1: #000;
+
+  --width-mw: 1400px;
+}
+.mw {
+  max-width: var(--width-mw);
+  width: calc(100% - 10rem);
+  margin: auto;
+}
+.hd {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0 1rem 0;
+  border-bottom: 1px solid var(--b1);
+}
+.hd svg {
+  width: 2rem;
+}
+.hd .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  flex: 1;
+  cursor: pointer;
+}
+.hd .gnb {
+  display: flex;
+  gap: 2rem;
+  position: relative;
+}
+.hd .gnb::before {
+  content: "";
+  position: absolute;
+  background-color: var(--b1);
+  width: 15px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+}
+.hd .gnb a {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.hd .gnb a:nth-of-type(3) {
+  margin-right: 30px;
+}
+
+.hd .snsIcon {
+  margin-left: 10px;
+}
+
+.hd .snsIcon button {
+  cursor: pointer;
+}
+/* footer */
+.footerCon {
+  /* width:100%; */
+  background-color: var(--b1);
+  color: var(--w1);
+  overflow: hidden;
+}
+.footerCon .slideText {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.footerCon .sns button,
+.hd .snsIcon button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.footerCon .inBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+}
+.footerCon .inBox h2 {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.footerCon .inBox input {
+  outline: none;
+  border: none;
+  width: 250px;
+  height: 25px;
+  padding-left: 1rem;
+}
+.footerCon .inBox button {
+  outline: none;
+  border: none;
+  width: 70px;
+  height: 27px;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.footerCon .siteMap {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 7rem;
+}
+
+.footerCon .siteMap strong {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.footerCon .siteMap .siteList {
+  /* border: 1px solid yellow; */
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerCon .siteMap .siteList > li {
+  /* border: 1px solid red; */
+  width: calc(100% / 3);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.footerCon .fCopy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem;
+}
+
+.footerCon .sns a {
+  fill: var(--w1);
+}
+.footerCon .sns svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.footerCon .fCopy .sns > a {
+  padding-left: 5px;
+}
+
+@media (max-width: 990px) {
+  .mw {
+    max-width: var(--width-mw);
+    width: calc(100% - 2rem);
+    margin: auto;
+  }
+
+  .hd .gnb {
+    display: none;
+  }
+
+  .footerCon .slideText {
+    white-space: nowrap;
+  }
+  .footerCon .inBox {
+    flex-direction: column;
+  }
+
+  .footerCon .inBox h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+  }
+  .footerCon .inBox .inputBox {
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 30px;
+    display: flex;
+  }
+  .footerCon .inBox .inputBox input {
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+  }
+  .footerCon .inBox .inputBox button {
+    width: 30%;
+    height: 100%;
+    margin-left: 0;
+    border: none;
+  }
+  .footerCon .siteMap {
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+  }
+  .footerCon .siteMap strong {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footerCon .siteMap .siteList {
+    width: 90%;
+  }
+  .footerCon .siteMap .siteList > li {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .footerCon .fCopy {
+    padding: 4rem;
+  }
+  .footerCon .fCopy .sns > a {
+    padding-left: 5px;
+  }
+}

@@ -1,0 +1,77 @@
+.podcastCon {
+  margin: 3rem 0;
+}
+.title img {
+  width: 100%;
+}
+.podcastCon .num {
+  font-weight: bold;
+}
+.podcastCon > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  padding: 2rem;
+  border-bottom: 1px solid var(--b1);
+  gap: 1rem;
+}
+
+.podcastCon > li:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.podcastCon .profile {
+  width: 100px;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+.podcastCon > li > h3 {
+  text-align: left;
+  width: 35%;
+  font-weight: bold;
+}
+.podcastCon .profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.podcastCon .smallT {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 20%;
+}
+.podcastCon .smallT p {
+  font-weight: bold;
+}
+.podcastCon a {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 990px) {
+  .podcastCon > li {
+    padding: 1rem 0;
+    justify-content: space-between;
+  }
+
+  .podcastCon .profile {
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+  }
+  .podcastCon > li > h3 {
+    width: 50%;
+  }
+  .podcastCon a {
+  }
+  .podcastCon .smallT {
+    display: none;
+  }
+}

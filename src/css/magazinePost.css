@@ -1,0 +1,121 @@
+.postTitle {
+  /* border: 1px solid #000; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.postTitle > button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+.postTitle > button > span {
+  font-size: 1.5rem;
+}
+.hopeText {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0;
+}
+.hopeText > h3 {
+  font-size: 5.5rem;
+  font-weight: bold;
+}
+.hopeText > p {
+  width: 50%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.magazineSec .infoCon {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 2rem 0;
+}
+.magazineSec .infoCon > p {
+  display: flex;
+  gap: 1rem;
+}
+.magazineSec .infoCon > p > span > strong {
+  font-weight: bold;
+}
+.magazineSec .infoCon > a {
+  font-size: 1.3rem;
+}
+.magazineSec .imgCon img {
+  width: 100%;
+}
+
+.magazineSec .authorCon {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.magazineSec .authorCon .authorProf {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+  gap: 1rem;
+  border-bottom: 1px solid var(--b1);
+}
+
+.magazineSec .authorCon .authorProf > p {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.magazineSec .authorCon .authorProf p > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.magazineSec .authorCon .authorProf > span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.magazineSec .authorCon .infoList {
+  padding: 2rem 0;
+}
+.magazineSec .authorCon .infoList > li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  padding-bottom: 0.7rem;
+}
+.magazineSec .authorCon .infoList > li strong {
+  font-weight: bold;
+}
+
+.magazineSec .authorCon .textCon {
+  width: 60%;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+.magazineSec .authorCon .textCon > p {
+  padding-bottom: 1.5rem;
+}
+.magazineSec .authorCon .textCon strong {
+  font-weight: bold;
+}
+.magazineSec .authorCon .textCon h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2rem 0;
+  border-top: 1px solid var(--b1);
+  border-bottom: 1px solid var(--b1);
+  margin-bottom: 1.5rem;
+}

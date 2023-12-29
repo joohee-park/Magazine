@@ -1,0 +1,160 @@
+.mSide {
+  padding: 2rem 0;
+  width: 40%;
+}
+.mSide > p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.mSide > h3 {
+  font-size: 4rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.mSide .mSideImg {
+  width: 100%;
+}
+.mSide .mSideImg img {
+  width: 100%;
+}
+
+.mSide > button {
+  font-size: 1.2rem;
+  background-color: var(--b1);
+  color: var(--w1);
+  padding: 1.5rem;
+  margin-top:1rem;
+  display: block;
+}
+.mSide .popularList {
+  padding: 2rem 0;
+}
+
+.mSide .popularList > span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.mSide .popularList > li {
+  font-size: 2rem;
+  padding:2rem 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  border-bottom: 1px solid var(--b1);
+}
+
+.mSide .popularList > li .pNumber {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 1.6rem;
+}
+.mSide .popularList > li .pTitle {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.mSide .popularList > li .pWriter > b  {
+  font-size:1.3rem;
+  padding-right:1rem;
+  font-weight: bold;
+}
+.mSide .popularList > li .pWriter > span {
+  font-size:1.3rem;
+}
+
+.newsLetter {
+  background-color:var(--w2);
+  padding:2rem
+}
+.newsLetter > p {
+  font-size:1.5rem;
+  font-weight: bold;
+ padding-bottom:1rem
+}
+.newsLetter > strong {
+  font-size:2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.newsLetter .inputBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width:100%;
+}
+.newsLetter .inputBox > input,
+.newsLetter .inputBox > button {
+  margin-top:1.5rem;
+  height:40px;
+}
+.newsLetter .inputBox input {
+  border:none;
+  width:65%
+}
+.newsLetter .inputBox > button {
+  width:35%;
+  border:none;
+  outline: none;
+  background-color:var(--b1);
+  color:var(--w1)
+}
+
+@media (max-width:990px){
+  .mSide {
+    /* display: flex; */
+    width:100%;
+    padding-top:600px;
+    position: relative;
+  }
+  .mSide > p {
+  position: absolute;
+  top:0;  
+  }
+  .mSide > h3 {
+    position: absolute;
+    top:1.7rem;
+  }
+  .mSide .mSideImg {
+    position: absolute;
+    width:25%;
+    left:0;
+    top:75px;
+    overflow: hidden;
+    height:280px
+  }
+  .mSide .mSideImg img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+  }
+  .mSide > button {
+    display: none;
+  }
+  .mSide .popularList {
+    height:280px;
+    position: absolute;
+    width:72%;
+    top:75px;
+    right:0;
+    padding:0
+  }
+  .mSide .popularList > span {
+    font-size:3rem
+  }
+
+  .mSide .newsLetter {
+    position: absolute;
+    bottom:20px;
+    width:100%;
+    text-align: center;
+  }
+
+  .newsLetter .inputBox {
+    width:80%;
+    margin:0 10%;
+    padding:2rem 0
+  }
+}

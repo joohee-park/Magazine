@@ -70,8 +70,24 @@
 @media (max-width: 990px) {
   .mList .mListText {
     gap: 1.5rem;
+    
   }
   .mList > li {
     padding: 2rem 0 2rem 0;
+  }
+
+  .mListText  p {
+    font-size:1.5rem;
+   }
+   
+}
+
+@media (max-width: 640px) {
+
+  .mListText .record {
+ display: none;
+  }
+  .mListText {
+    padding-bottom:2.7rem
   }
 }

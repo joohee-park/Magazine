@@ -12,7 +12,7 @@ export default function Mside() {
       <p>PRINTMAGAZINE</p>
       <h3>03/2023</h3>
       <div className={cssStyle.mSideImg}>
-        <img src='../img/main_side_img.png' />
+        <img src={`${process.env.PUBLIC_URL}/img/main_side_img.png`}/>
       </div>
       <button>BUTTON</button>
       <ul className={cssStyle.popularList}>

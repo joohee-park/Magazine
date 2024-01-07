@@ -52,14 +52,14 @@ export default function MagazinePost() {
           <a href=''>cate</a>
         </div>
         <div className='imgCon'>
-          <img src='../img/magazine_post_01.png' alt='' />
+          <img src={`${process.env.PUBLIC_URL}/img/magazine_post_01.png`}/>
         </div>
 
         <div className='authorCon'>
           <div className='authorInfo'>
             <div className='authorProf'>
               <p>
-                <img src='../img/authors_01.png'></img>
+                <img src={`${process.env.PUBLIC_URL}/img/authors_01.png`} ></img>
               </p>
               <span>Jakob Gronber</span>
             </div>

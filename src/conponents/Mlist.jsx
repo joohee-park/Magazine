@@ -17,7 +17,7 @@ export default function Mlist() {
               navigate("/magazinepost");
             }}>
             <div className={cssStyle.mListImg}>
-              <img src={`/img/${list.img}`} alt='list01' />
+              <img src={`${process.env.PUBLIC_URL}/img/${list.img}`} />
             </div>
             <div className={cssStyle.mListText}>
               <h3>{list.title}</h3>
